@@ -28,13 +28,13 @@ So here you can change the text of the banner by using the following attributes:
 
 ### Customize position
 ```html
-<div class="cb-cookie_banner" data-cb-component="container" data-cb-cookieName="otherTextCookie" data-cb-href="privacy-policy.html" data-cb-position="bottom"></div>
+<div class="cb-cookie_banner" data-cb-component="container" data-cb-cookieName="bottomCookie" data-cb-href="privacy-policy.html" data-cb-position="bottom"></div>
 ```
 Here you have specified that the cookie banner will be shown at the bottom of the page. The default value for the `data-cb-position` attribute is `top`. You only have two options so far.
 
 ### Customize CSS classes
 ```html
-<div class="cb-cookie_banner" data-cb-component="container" data-cb-cookieName="otherTextCookie" data-cb-href="privacy-policy.html" data-cb-bodyClass="active-cookie" data-cb-activeClass="isActive"></div>
+<div class="cb-cookie_banner" data-cb-component="container" data-cb-cookieName="otherCssClassesCookie" data-cb-href="privacy-policy.html" data-cb-bodyClass="active-cookie" data-cb-activeClass="isActive"></div>
 ```
 The `body` gets an additional css class when the cookie banner is active. You might want to use this to add differnt styles to other elements when cookie banner is active.
 You also might want to use another css class for the active state of the banner.
@@ -44,7 +44,7 @@ The defaults for both attributes are:
 
 ### Customize cookie properties
 ```html
-<div class="cb-cookie_banner" data-cb-component="container" data-cb-cookieName="otherTextCookie" data-cb-href="privacy-policy.html" data-cb-cookieValue="true" data-cb-cookieExpires="86400000" data-cb-cookiePath="/sub-path"></div>
+<div class="cb-cookie_banner" data-cb-component="container" data-cb-cookieName="otherDataCookie" data-cb-href="privacy-policy.html" data-cb-cookieValue="true" data-cb-cookieExpires="86400000" data-cb-cookiePath="/sub-path"></div>
 ```
 Here we added a cookie banner which stores a cookie with a value of `true` for one day and only in sub-folder `sub-path`.
 If you leave these attributes the following properties are used:
